@@ -1,6 +1,9 @@
 
+using Microsoft.EntityFrameworkCore;
 using Sakila.Application;
 using Sakila.Persistent;
+using System;
+using UserMap.Persistent;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,7 +22,15 @@ builder.Services.AddCors(op => op.AddPolicy(name: "angularApp", policy =>
     policy.SetIsOriginAllowedToAllowWildcardSubdomains();
 }));
 var app = builder.Build();
+// Migrate latest database changes during startup
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider
+        .GetRequiredService<UserMapContext>();
 
+    // Here is the migration executed
+    dbContext.Database.Migrate();
+}
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

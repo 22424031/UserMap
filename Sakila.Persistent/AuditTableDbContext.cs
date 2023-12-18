@@ -5,12 +5,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UserMap.Persistent;
 
 namespace Sakila.Persistent
 {
     public abstract class AuditTableDbContext : DbContext
     {
-        public AuditTableDbContext(DbContextOptions options) : base(options)
+        public AuditTableDbContext(DbContextOptions<UserMapContext> options) : base(options)
         {
 
         }

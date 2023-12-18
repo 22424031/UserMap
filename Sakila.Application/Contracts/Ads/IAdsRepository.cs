@@ -8,7 +8,7 @@ using UserMap.Domain;
 
 namespace UserMap.Application.Contracts.Ads
 {
-    public interface IAdsRepository : IGenericRepository<Ads>
+    public interface IAdsRepository : IGenericRepository<Domain.Ads>
     {
     }
 }

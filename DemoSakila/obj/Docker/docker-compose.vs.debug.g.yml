@@ -14,10 +14,10 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=
     volumes:
-      - C:\Demo Project\UserMap\DemoSakila\DemoSakila\DemoSakila:/app
-      - C:\Demo Project\UserMap\DemoSakila\DemoSakila:/src
-      - C:\Users\tru tran\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\tru tran\.nuget\packages\:/root/.nuget/packages:ro
+      - D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\DemoSakila:/app
+      - D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila:/src
+      - C:\Users\tru\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\tru\.nuget\packages\:/root/.nuget/packages:ro
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
 

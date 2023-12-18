@@ -10,8 +10,7 @@ namespace Sakila.Domain.Common
     public class BaseDomainEntity
     {
 
-        [Key]
-        public int Id { get; set; }
+    
 
         public DateTime last_update { get; set; }
     }

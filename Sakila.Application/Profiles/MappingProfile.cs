@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
-using Sakila.Application.Dtos.Spaces;
-using Sakila.Application.Dtos.Surfaces;
+using UserMap.Application.Dtos.Ads;
+using UserMap.Domain;
 
 namespace Sakila.Application.Profiles
 {
@@ -13,10 +13,9 @@ namespace Sakila.Application.Profiles
     {
         public MappingProfile()
         {
-            CreateMap<Domain.Spaces, SpaceDto>().ReverseMap();
-            CreateMap<Domain.Surfaces, SurfaceDto>().ReverseMap();
+       
 
-            //CreateMap<Domain.Surfaces, Dtos.Citys.CityDto>().ReverseMap();
+            CreateMap<Ads, AdsDto>().ReverseMap();
         }
     }
 }

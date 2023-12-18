@@ -1,8 +1,8 @@
-name: dockercompose6992689233698436619
+name: dockercompose14625585748996814705
 services:
   demosakila.api:
     build:
-      context: C:\Demo Project\UserMap\DemoSakila\DemoSakila
+      context: D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila
       dockerfile: DemoSakila/Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: Development
@@ -19,13 +19,13 @@ services:
       protocol: tcp
     volumes:
     - type: bind
-      source: C:\Users\tru tran\AppData\Roaming/Microsoft/UserSecrets
+      source: C:\Users\tru\AppData\Roaming/Microsoft/UserSecrets
       target: /root/.microsoft/usersecrets
       read_only: true
       bind:
         create_host_path: true
     - type: bind
-      source: C:\Users\tru tran\AppData\Roaming/ASP.NET/Https
+      source: C:\Users\tru\AppData\Roaming/ASP.NET/Https
       target: /root/.aspnet/https
       read_only: true
       bind:
@@ -45,10 +45,10 @@ services:
     user: trutran
     volumes:
     - type: bind
-      source: C:\Demo Project\UserMap\DemoSakila\DemoSakila\mysql
+      source: D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\mysql
       target: /var/lib/my-vol
       bind:
         create_host_path: true
 networks:
   default:
-    name: dockercompose6992689233698436619_default
+    name: dockercompose14625585748996814705_default

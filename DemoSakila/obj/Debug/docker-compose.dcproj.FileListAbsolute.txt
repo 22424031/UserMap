@@ -66,3 +66,38 @@ C:\Demo Project\UserMap\DemoSakila\DemoSakila\bin\Debug\UserMap.Domain.pdb
 C:\Demo Project\UserMap\DemoSakila\DemoSakila\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 C:\Demo Project\UserMap\DemoSakila\DemoSakila\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\Demo Project\UserMap\DemoSakila\DemoSakila\obj\Debug\docker-compose.dcproj.CopyComplete
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\UserMap.API.dll
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\UserMap.API.deps.json
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\UserMap.API.runtimeconfig.json
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\appsettings.Development.json
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\appsettings.json
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\UserMap.API.exe
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\MediatR.dll
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\UserMap.Application.dll
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\Microsoft.Extensions.Configuration.dll
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\UserMap.Persistent.dll
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\Swashbuckle.AspNetCore.Swagger.dll
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\MediatR.Contracts.dll
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\UserMap.Domain.dll
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\AutoMapper.dll
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\MediatR.Extensions.Microsoft.DependencyInjection.dll
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\Pomelo.EntityFrameworkCore.MySql.dll
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\Microsoft.OpenApi.dll
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\MySqlConnector.dll
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\UserMap.API.pdb
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\UserMap.Application.pdb
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\UserMap.Persistent.pdb
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\UserMap.Domain.pdb
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\obj\Debug\docker-compose.dcproj.CopyComplete
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\Microsoft.EntityFrameworkCore.dll
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\Microsoft.Extensions.Caching.Memory.dll

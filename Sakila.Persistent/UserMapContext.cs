@@ -11,13 +11,13 @@ namespace UserMap.Persistent
 {
     public class UserMapContext : AuditTableDbContext
     {
-        public UserMapContext(DbContextOptions<SakilaContext> options) : base(options)
+        public UserMapContext(DbContextOptions<UserMapContext> options) : base(options)
         {
         }
-
+      
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(SakilaContext).Assembly);
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(UserMapContext).Assembly);
         }
         public DbSet<Ads> Ads { get; set; }
 

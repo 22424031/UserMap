@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using Sakila.Application.Contracts;
 using Sakila.Persistent.Repositories;
 using UserMap.Persistent;
+using UserMap.Application.Contracts.Ads;
+using UserMap.Persistent.Repositories;
 
 namespace Sakila.Persistent
 {
@@ -19,8 +21,8 @@ namespace Sakila.Persistent
                 x.UseMySql(conectionString, version);
             });
             services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
-            services.AddScoped<Application.Contracts.Actor.ISpaceRepository,Repositories.SpacesRepository>();
-            services.AddScoped<Application.Contracts.Citys.ISurfaceRepository, Repositories.SurfacesRepository>();
+            services.AddScoped<IAdsRepository,AdsRepository>();
+            
             return services;
         }
 

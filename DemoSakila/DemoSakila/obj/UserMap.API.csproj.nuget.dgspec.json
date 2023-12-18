@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Demo Project\\UserMap\\DemoSakila\\DemoSakila\\DemoSakila\\UserMap.API.csproj": {}
+    "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\DemoSakila\\DemoSakila\\UserMap.API.csproj": {}
   },
   "projects": {
-    "C:\\Demo Project\\UserMap\\DemoSakila\\DemoSakila\\DemoSakila\\UserMap.API.csproj": {
+    "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\DemoSakila\\DemoSakila\\UserMap.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Demo Project\\UserMap\\DemoSakila\\DemoSakila\\DemoSakila\\UserMap.API.csproj",
+        "projectUniqueName": "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\DemoSakila\\DemoSakila\\UserMap.API.csproj",
         "projectName": "UserMap.API",
-        "projectPath": "C:\\Demo Project\\UserMap\\DemoSakila\\DemoSakila\\DemoSakila\\UserMap.API.csproj",
-        "packagesPath": "C:\\Users\\tru tran\\.nuget\\packages\\",
-        "outputPath": "C:\\Demo Project\\UserMap\\DemoSakila\\DemoSakila\\DemoSakila\\obj\\",
+        "projectPath": "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\DemoSakila\\DemoSakila\\UserMap.API.csproj",
+        "packagesPath": "C:\\Users\\tru\\.nuget\\packages\\",
+        "outputPath": "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\DemoSakila\\DemoSakila\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tru tran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tru\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Demo Project\\UserMap\\DemoSakila\\Sakila.Application\\UserMap.Application.csproj": {
-                "projectPath": "C:\\Demo Project\\UserMap\\DemoSakila\\Sakila.Application\\UserMap.Application.csproj"
+              "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Application\\UserMap.Application.csproj": {
+                "projectPath": "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Application\\UserMap.Application.csproj"
               },
-              "C:\\Demo Project\\UserMap\\DemoSakila\\Sakila.Persistent\\UserMap.Persistent.csproj": {
-                "projectPath": "C:\\Demo Project\\UserMap\\DemoSakila\\Sakila.Persistent\\UserMap.Persistent.csproj"
+              "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Persistent\\UserMap.Persistent.csproj": {
+                "projectPath": "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Persistent\\UserMap.Persistent.csproj"
               }
             }
           }
@@ -51,7 +51,7 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.25, )"
+              "version": "[6.0.22, )"
             },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
@@ -68,7 +68,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -80,21 +81,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Demo Project\\UserMap\\DemoSakila\\Sakila.Application\\UserMap.Application.csproj": {
+    "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Application\\UserMap.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Demo Project\\UserMap\\DemoSakila\\Sakila.Application\\UserMap.Application.csproj",
+        "projectUniqueName": "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Application\\UserMap.Application.csproj",
         "projectName": "UserMap.Application",
-        "projectPath": "C:\\Demo Project\\UserMap\\DemoSakila\\Sakila.Application\\UserMap.Application.csproj",
-        "packagesPath": "C:\\Users\\tru tran\\.nuget\\packages\\",
-        "outputPath": "C:\\Demo Project\\UserMap\\DemoSakila\\Sakila.Application\\obj\\",
+        "projectPath": "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Application\\UserMap.Application.csproj",
+        "packagesPath": "C:\\Users\\tru\\.nuget\\packages\\",
+        "outputPath": "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tru tran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tru\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -108,8 +109,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Demo Project\\UserMap\\DemoSakila\\Sakila.Domain\\UserMap.Domain.csproj": {
-                "projectPath": "C:\\Demo Project\\UserMap\\DemoSakila\\Sakila.Domain\\UserMap.Domain.csproj"
+              "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Domain\\UserMap.Domain.csproj": {
+                "projectPath": "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Domain\\UserMap.Domain.csproj"
               }
             }
           }
@@ -155,7 +156,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -164,21 +166,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Demo Project\\UserMap\\DemoSakila\\Sakila.Domain\\UserMap.Domain.csproj": {
+    "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Domain\\UserMap.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Demo Project\\UserMap\\DemoSakila\\Sakila.Domain\\UserMap.Domain.csproj",
+        "projectUniqueName": "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Domain\\UserMap.Domain.csproj",
         "projectName": "UserMap.Domain",
-        "projectPath": "C:\\Demo Project\\UserMap\\DemoSakila\\Sakila.Domain\\UserMap.Domain.csproj",
-        "packagesPath": "C:\\Users\\tru tran\\.nuget\\packages\\",
-        "outputPath": "C:\\Demo Project\\UserMap\\DemoSakila\\Sakila.Domain\\obj\\",
+        "projectPath": "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Domain\\UserMap.Domain.csproj",
+        "packagesPath": "C:\\Users\\tru\\.nuget\\packages\\",
+        "outputPath": "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tru tran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tru\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -209,7 +211,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -218,21 +221,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Demo Project\\UserMap\\DemoSakila\\Sakila.Persistent\\UserMap.Persistent.csproj": {
+    "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Persistent\\UserMap.Persistent.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Demo Project\\UserMap\\DemoSakila\\Sakila.Persistent\\UserMap.Persistent.csproj",
+        "projectUniqueName": "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Persistent\\UserMap.Persistent.csproj",
         "projectName": "UserMap.Persistent",
-        "projectPath": "C:\\Demo Project\\UserMap\\DemoSakila\\Sakila.Persistent\\UserMap.Persistent.csproj",
-        "packagesPath": "C:\\Users\\tru tran\\.nuget\\packages\\",
-        "outputPath": "C:\\Demo Project\\UserMap\\DemoSakila\\Sakila.Persistent\\obj\\",
+        "projectPath": "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Persistent\\UserMap.Persistent.csproj",
+        "packagesPath": "C:\\Users\\tru\\.nuget\\packages\\",
+        "outputPath": "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Persistent\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tru tran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tru\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -246,11 +249,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Demo Project\\UserMap\\DemoSakila\\Sakila.Application\\UserMap.Application.csproj": {
-                "projectPath": "C:\\Demo Project\\UserMap\\DemoSakila\\Sakila.Application\\UserMap.Application.csproj"
+              "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Application\\UserMap.Application.csproj": {
+                "projectPath": "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Application\\UserMap.Application.csproj"
               },
-              "C:\\Demo Project\\UserMap\\DemoSakila\\Sakila.Domain\\UserMap.Domain.csproj": {
-                "projectPath": "C:\\Demo Project\\UserMap\\DemoSakila\\Sakila.Domain\\UserMap.Domain.csproj"
+              "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Domain\\UserMap.Domain.csproj": {
+                "projectPath": "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Domain\\UserMap.Domain.csproj"
               }
             }
           }
@@ -312,7 +315,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -321,7 +325,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

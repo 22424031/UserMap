@@ -25,7 +25,8 @@ namespace UserMap.Domain
         public float Height { get; set; }
         public float Width { get; set; }
         public string SizeUnit { get; set; } 
-        public List<string> UrlImages { get; set; }
+        public List<string>? UrlImages { get; set; }
+        public string UrlImagesJson { get; set; }
         public string AdsAddress { get; set; }
         public decimal Lat { get; set; }
         public decimal Longt { get; set; }
