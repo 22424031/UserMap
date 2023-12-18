@@ -10,5 +10,6 @@ namespace UserMap.Application.Contracts.Ads
 {
     public interface IAdsRepository : IGenericRepository<Domain.Ads>
     {
+        Task SaveChange();
     }
 }

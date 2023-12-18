@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "grGKQxznJDpWGRqwW8DakbSV/MsQvyA+lrZEYVcewGT757VM6zBBgjQJLeb8D1DcdWKxKO9WMAiCPjZ+RZHGNQ==",
+  "dgSpecHash": "ru37qa/0ltfMbNedzbURofNt8Szu8RxfrZ/DyI78LK1JgGBiUoc9/5cr5ur1szpK7wnVHne51A4wKEnnlFg/XA==",
   "success": true,
   "projectFilePath": "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Application\\UserMap.Application.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "C:\\Users\\tru\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\tru\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\tru\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\tru\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\tru\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []

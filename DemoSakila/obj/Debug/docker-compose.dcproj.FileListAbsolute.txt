@@ -101,3 +101,4 @@ D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\Microsoft.EntityFram
 D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
 D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
 D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\bin\Debug\Newtonsoft.Json.dll

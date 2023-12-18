@@ -15,10 +15,13 @@
 *.so
 *.dylib
 *.dll
+*.vsidx
+*.cache
 
 # Fortran module files
 *.mod
 *.smod
+*/bin/Debug/net6.0
 
 # Compiled Static libraries
 *.lai

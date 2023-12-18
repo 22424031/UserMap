@@ -12,25 +12,23 @@ using UserMap.Application.Feature.Ads.Requests;
 
 namespace UserMap.Application.Feature.Ads.Handlers
 {
-    public class AddAdsHandler : IRequestHandler<AddAdsRequest, BaseResponse<AdsDto>>
+    public class GetAdsListHandler : IRequestHandler<GetAdsListRequest, BaseResponse<List<AdsDto>>>
     {
-        private readonly IMapper _mapper;
         private readonly IAdsRepository _adsRepository;
-        public AddAdsHandler(IAdsRepository adsRepository, IMapper mapper)
+        private readonly IMapper _mapper;
+        public GetAdsListHandler(IAdsRepository adsRepository, IMapper mapper)
         {
             _adsRepository = adsRepository;
             _mapper = mapper;
         }
-        public async Task<BaseResponse<AdsDto>> Handle(AddAdsRequest request, CancellationToken cancellationToken)
+        public async Task<BaseResponse<List<AdsDto>>> Handle(GetAdsListRequest request, CancellationToken cancellationToken)
         {
-            BaseResponse<AdsDto> rs = new();
+            var rs = new BaseResponse<List<AdsDto>>();
             try
             {
-              Domain.Ads ads = await _adsRepository.Add(_mapper.Map<Domain.Ads>(request.Ads));
-                await _adsRepository.SaveChange();
-                rs.Status = 200;
-                rs.Data = _mapper.Map<AdsDto>(ads);
-               
+                var data = await _adsRepository.GetAll();
+                rs.Data = _mapper.Map<List<AdsDto>>(data);
+                
             }
             catch(Exception ex)
             {

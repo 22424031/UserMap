@@ -98,3 +98,4 @@ D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\DemoSakila\obj\Debug\net6.0\re
 D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\DemoSakila\obj\Debug\net6.0\UserMap.API.pdb
 D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\DemoSakila\obj\Debug\net6.0\UserMap.API.genruntimeconfig.cache
 D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\DemoSakila\obj\Debug\net6.0\ref\UserMap.API.dll
+D:\Tai lieu\Lap trinh hien dai\UserMap\DemoSakila\DemoSakila\bin\Debug\net6.0\Newtonsoft.Json.dll
