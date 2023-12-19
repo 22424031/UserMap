@@ -16,7 +16,7 @@ namespace WardService
         {
         }
 
-        public async Task<BaseResponse<bool>> PushToWard(CreateAdsDto dto)
+        public async Task<BaseResponse<bool>> PushToWard(AdsDto dto)
         {
             return await this.PostAsync("api/ward/ReceiveAds",dto);
         }
