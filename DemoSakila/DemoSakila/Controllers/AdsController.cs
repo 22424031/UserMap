@@ -28,7 +28,6 @@ namespace UserMap.API.Controllers
         {
             BaseResponse<List<AdsDto>> rs = new();
             rs = await _mediator.Send(new GetAdsListRequest());
-
             return rs;
         }
         /// <summary>
