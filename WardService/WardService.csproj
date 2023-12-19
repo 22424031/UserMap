@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Sakila.Application\UserMap.Application.csproj" />
+  </ItemGroup>
+
 </Project>

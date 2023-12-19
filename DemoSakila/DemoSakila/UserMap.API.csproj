@@ -22,6 +22,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Sakila.Application\UserMap.Application.csproj" />
     <ProjectReference Include="..\..\Sakila.Persistent\UserMap.Persistent.csproj" />
+    <ProjectReference Include="..\..\WardService\WardService.csproj" />
   </ItemGroup>
 
 </Project>
