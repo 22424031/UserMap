@@ -4,6 +4,7 @@ using Sakila.Application.Dtos.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Json;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -24,19 +25,17 @@ namespace WardService
             string dataJson = JsonConvert.SerializeObject(data);
             var content = new StringContent(dataJson);
             HttpClient client = new HttpClient();
-            HttpResponseMessage rs = await client.PostAsync($"{url}/{path}", content);
-            if (rs.IsSuccessStatusCode)
+            HttpResponseMessage rs = await client.PostAsJsonAsync<T>($"{url}/{path}", data);
+            if (rs.StatusCode == System.Net.HttpStatusCode.OK)
             {
                 rs.EnsureSuccessStatusCode();
                 result.IsError = false;
-                result.Data = true;
-                
             }
             else
             {
                 result.IsError = true;
-                result.ErrorMessage = "Error post data";
-                result.Status = 500;
+                result.ErrorMessage = $"Error post data: ";
+                result.Status = (int)rs.StatusCode;
             }
             return result;
         }

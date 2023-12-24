@@ -34,13 +34,13 @@ namespace UserMap.Application.Feature.Ads.Handlers
                 await _adsRepository.SaveChange();
                 rs.Status = 200;
                 rs.Data = _mapper.Map<AdsDto>(ads);
-                //var resultWard = await _wardAds.PushToWard(_mapper.Map<AdsDto>(ads));
-                //if (resultWard.IsError)
-                //{
-                //    rs.Status = 500;
-                //    rs.ErrorMessage = resultWard.ErrorMessage;
-                //    return rs;
-                //}
+                var resultWard = await _wardAds.PushToWard(_mapper.Map<AdsDto>(ads));
+                if (resultWard.IsError)
+                {
+                    rs.Status = 500;
+                    rs.ErrorMessage = resultWard.ErrorMessage;
+                    return rs;
+                }
             }
             catch(Exception ex)
             {
