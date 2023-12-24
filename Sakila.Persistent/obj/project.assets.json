@@ -1511,11 +1511,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Persistent\\UserMap.Persistent.csproj",
+      "projectUniqueName": "D:\\Tai lieu\\Lap trinh hien dai\\Do an cuoi ky Map\\UserMap\\Sakila.Persistent\\UserMap.Persistent.csproj",
       "projectName": "UserMap.Persistent",
-      "projectPath": "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Persistent\\UserMap.Persistent.csproj",
+      "projectPath": "D:\\Tai lieu\\Lap trinh hien dai\\Do an cuoi ky Map\\UserMap\\Sakila.Persistent\\UserMap.Persistent.csproj",
       "packagesPath": "C:\\Users\\tru\\.nuget\\packages\\",
-      "outputPath": "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Persistent\\obj\\",
+      "outputPath": "D:\\Tai lieu\\Lap trinh hien dai\\Do an cuoi ky Map\\UserMap\\Sakila.Persistent\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tru\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1532,11 +1532,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Application\\UserMap.Application.csproj": {
-              "projectPath": "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Application\\UserMap.Application.csproj"
+            "D:\\Tai lieu\\Lap trinh hien dai\\Do an cuoi ky Map\\UserMap\\Sakila.Application\\UserMap.Application.csproj": {
+              "projectPath": "D:\\Tai lieu\\Lap trinh hien dai\\Do an cuoi ky Map\\UserMap\\Sakila.Application\\UserMap.Application.csproj"
             },
-            "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Domain\\UserMap.Domain.csproj": {
-              "projectPath": "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Domain\\UserMap.Domain.csproj"
+            "D:\\Tai lieu\\Lap trinh hien dai\\Do an cuoi ky Map\\UserMap\\Sakila.Domain\\UserMap.Domain.csproj": {
+              "projectPath": "D:\\Tai lieu\\Lap trinh hien dai\\Do an cuoi ky Map\\UserMap\\Sakila.Domain\\UserMap.Domain.csproj"
             }
           }
         }
