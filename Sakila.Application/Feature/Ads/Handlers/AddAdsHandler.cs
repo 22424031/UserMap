@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UserMap.Application.Contracts.Ads;
+using UserMap.Application.Contracts.Ward;
 using UserMap.Application.Dtos.Ads;
 using UserMap.Application.Feature.Ads.Requests;
 
@@ -16,21 +17,30 @@ namespace UserMap.Application.Feature.Ads.Handlers
     {
         private readonly IMapper _mapper;
         private readonly IAdsRepository _adsRepository;
-        public AddAdsHandler(IAdsRepository adsRepository, IMapper mapper)
+        private readonly IWardAds _wardAds;
+        public AddAdsHandler(IAdsRepository adsRepository, IMapper mapper, IWardAds wardAds)
         {
             _adsRepository = adsRepository;
             _mapper = mapper;
+            _wardAds = wardAds;
         }
         public async Task<BaseResponse<AdsDto>> Handle(AddAdsRequest request, CancellationToken cancellationToken)
         {
             BaseResponse<AdsDto> rs = new();
             try
             {
+              
               Domain.Ads ads = await _adsRepository.Add(_mapper.Map<Domain.Ads>(request.Ads));
                 await _adsRepository.SaveChange();
                 rs.Status = 200;
                 rs.Data = _mapper.Map<AdsDto>(ads);
-               
+                //var resultWard = await _wardAds.PushToWard(_mapper.Map<AdsDto>(ads));
+                //if (resultWard.IsError)
+                //{
+                //    rs.Status = 500;
+                //    rs.ErrorMessage = resultWard.ErrorMessage;
+                //    return rs;
+                //}
             }
             catch(Exception ex)
             {
