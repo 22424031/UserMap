@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using UserMap.Persistent;
 
@@ -10,9 +11,10 @@ using UserMap.Persistent;
 namespace UserMap.Persistent.Migrations
 {
     [DbContext(typeof(UserMapContext))]
-    partial class UserMapContextModelSnapshot : ModelSnapshot
+    [Migration("20231224050602_add-isDeleted-toDomain")]
+    partial class addisDeletedtoDomain
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -54,9 +56,10 @@ namespace UserMap.Persistent.Migrations
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("DeletedBy")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<DateTime?>("DeletedDate")
+                    b.Property<DateTime>("DeletedDate")
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("District")
@@ -87,10 +90,8 @@ namespace UserMap.Persistent.Migrations
                         .HasColumnType("decimal(65,30)");
 
                     b.Property<string>("ModifiedBy")
+                        .IsRequired()
                         .HasColumnType("longtext");
-
-                    b.Property<DateTime?>("ModifiedDate")
-                        .HasColumnType("datetime(6)");
 
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
@@ -118,6 +119,9 @@ namespace UserMap.Persistent.Migrations
 
                     b.Property<float>("Width")
                         .HasColumnType("float");
+
+                    b.Property<DateTime>("last_update")
+                        .HasColumnType("datetime(6)");
 
                     b.HasKey("AdsID");
 

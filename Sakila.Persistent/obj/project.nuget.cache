@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F5IYPPqRwYYkRGxAaw1D7kKpz9YQpIhUCs9UlY4z+XI9BvoxLA9xRT6YlVv60KIrOKLM/a6miozeAu9feQE28A==",
+  "dgSpecHash": "MMUZUH36I5jjJbzyZYHHWVzgnO0oxdkzXz0GJW7S7hpmrsK6Y+FPn0DVGJVKnHsBxmF8Syvya7ZFQCqaxM8/oA==",
   "success": true,
-  "projectFilePath": "D:\\Tai lieu\\Lap trinh hien dai\\UserMap\\Sakila.Persistent\\UserMap.Persistent.csproj",
+  "projectFilePath": "D:\\Tai lieu\\Lap trinh hien dai\\Do an cuoi ky Map\\UserMap\\Sakila.Persistent\\UserMap.Persistent.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tru\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\tru\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
