@@ -37,7 +37,7 @@ namespace UserMap.Application.Feature.Ads.Handlers
                 var resultWard = await _wardAds.PushToWard(_mapper.Map<AdsDto>(ads));
                 if (resultWard.IsError)
                 {
-                    rs.Status = 500;
+                    rs.Status = resultWard.Status;
                     rs.ErrorMessage = resultWard.ErrorMessage;
                     return rs;
                 }
