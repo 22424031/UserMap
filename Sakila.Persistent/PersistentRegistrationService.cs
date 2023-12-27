@@ -6,6 +6,7 @@ using Sakila.Persistent.Repositories;
 using UserMap.Persistent;
 using UserMap.Application.Contracts.Ads;
 using UserMap.Persistent.Repositories;
+using UserMap.Application.Contracts.ReportWarm;
 
 namespace Sakila.Persistent
 {
@@ -22,7 +23,7 @@ namespace Sakila.Persistent
             });
             services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
             services.AddScoped<IAdsRepository,AdsRepository>();
-            
+            services.AddScoped<IReportWarmRepository, ReportWarmRepository>();
             return services;
         }
 

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Newtonsoft.Json;
 using UserMap.Application.Dtos.Ads;
+using UserMap.Application.Dtos.ReportWarm;
 using UserMap.Domain;
 
 namespace Sakila.Application.Profiles
@@ -30,6 +31,22 @@ namespace Sakila.Application.Profiles
                 }
             });
             CreateMap<Ads, AdsDto>().ReverseMap();
+            CreateMap<ReportWarm, ReportWarmDto>().ReverseMap();
+            CreateMap<ReportWarm, CreateReportWarmDto>().ReverseMap();
+            CreateMap<CreateReportWarmDto, ReportWarm>().ForMember(x => x.UrlString, opt => opt.MapFrom(y => y.UrlString)).AfterMap((src, des) =>
+            {
+                if (src.UrlString is not null && src.UrlString.Count > 0)
+                {
+                    des.UrlStringJson = JsonConvert.SerializeObject(src.UrlString);
+                }
+            });
+            CreateMap<ReportWarm, ReportWarmDto>().ForMember(x => x.UrlString, opt => opt.MapFrom(y => y.UrlString)).AfterMap((src, des) =>
+            {
+                if (!string.IsNullOrWhiteSpace(src.UrlStringJson))
+                {
+                    des.UrlString = JsonConvert.DeserializeObject<List<string>>(src.UrlStringJson);
+                }
+            });
         }
     }
 }

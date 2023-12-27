@@ -25,7 +25,7 @@ namespace Sakila.Persistent
                 foreach (var entry in base.ChangeTracker.Entries<BaseDomainEntity>()
                     .Where(x => x.State == EntityState.Added || x.State == EntityState.Modified))
                 {
-                    if (username == null) username = "system";
+                    if (string.IsNullOrWhiteSpace(username )) username = "system";
                     if (entry.State == EntityState.Added)
                     {
                         entry.Entity.CreatedDate = DateTime.Now;

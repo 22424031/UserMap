@@ -10,6 +10,7 @@ namespace WardService
         {
             string wardUrl = configuration["client:wardurl"];
             services.AddScoped<IWardAds, WardAds>();
+            services.AddScoped<IWardReportWarm, ReportWarm>();
             return services;
         }
     }

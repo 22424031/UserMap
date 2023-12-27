@@ -20,6 +20,6 @@ namespace UserMap.Persistent
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(UserMapContext).Assembly);
         }
         public DbSet<Ads> Ads { get; set; }
-
+        public DbSet<ReportWarm> ReportWarm { get; set; }
     }
 }
