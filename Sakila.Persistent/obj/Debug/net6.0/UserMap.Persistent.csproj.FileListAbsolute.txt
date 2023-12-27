@@ -55,3 +55,4 @@ D:\Tai lieu\Lap trinh hien dai\Do an cuoi ky Map\UserMap\Sakila.Persistent\obj\D
 D:\Tai lieu\Lap trinh hien dai\Do an cuoi ky Map\UserMap\Sakila.Persistent\obj\Debug\net6.0\UserMap.Persistent.pdb
 D:\Tai lieu\Lap trinh hien dai\Do an cuoi ky Map\UserMap\Sakila.Persistent\obj\Debug\net6.0\UserMap.Persistent.genruntimeconfig.cache
 D:\Tai lieu\Lap trinh hien dai\Do an cuoi ky Map\UserMap\Sakila.Persistent\obj\Debug\net6.0\ref\UserMap.Persistent.dll
+D:\Tai lieu\Lap trinh hien dai\Do an cuoi ky Map\UserMap\Sakila.Persistent\obj\Debug\net6.0\UserMap.Persistent.sourcelink.json

@@ -43,3 +43,4 @@ D:\Tai lieu\Lap trinh hien dai\Do an cuoi ky Map\UserMap\Sakila.Application\obj\
 D:\Tai lieu\Lap trinh hien dai\Do an cuoi ky Map\UserMap\Sakila.Application\obj\Debug\net6.0\refint\UserMap.Application.dll
 D:\Tai lieu\Lap trinh hien dai\Do an cuoi ky Map\UserMap\Sakila.Application\obj\Debug\net6.0\UserMap.Application.pdb
 D:\Tai lieu\Lap trinh hien dai\Do an cuoi ky Map\UserMap\Sakila.Application\obj\Debug\net6.0\ref\UserMap.Application.dll
+D:\Tai lieu\Lap trinh hien dai\Do an cuoi ky Map\UserMap\Sakila.Application\obj\Debug\net6.0\UserMap.Application.sourcelink.json

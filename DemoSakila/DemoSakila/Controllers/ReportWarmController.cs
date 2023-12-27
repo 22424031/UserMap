@@ -47,5 +47,12 @@ namespace UserMap.API.Controllers
 
             return result;
         }
+        [HttpGet()]
+        public async Task<ActionResult<BaseResponse<List<ReportWarmDto>>>> GetListAsync()
+        {
+            var result = await _mediator.Send(new GetListReportWarmRequest ());
+
+            return result;
+        }
     }
 }
