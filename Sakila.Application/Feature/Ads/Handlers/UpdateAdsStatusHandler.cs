@@ -20,7 +20,7 @@ namespace UserMap.Application.Feature.Ads.Handlers
         public async Task<BaseResponse<bool>> Handle(UpdateAdsStatusRequest request, CancellationToken cancellationToken)
         {
             BaseResponse<bool> rs = new();
-            var ads = await _adsRepository.GetAdsById(request.StatusFeedbackDto.AdsId);
+            var ads = await _adsRepository.GetAdsById(request.StatusFeedbackDto.Id);
             try
             {
                 if (ads != null)

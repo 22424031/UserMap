@@ -31,10 +31,12 @@ namespace UserMap.Application.Feature.Ads.Handlers
             {
               
               Domain.Ads ads = await _adsRepository.Add(_mapper.Map<Domain.Ads>(request.Ads));
+                ads.IsActive = false;
                 await _adsRepository.SaveChange();
                 rs.Status = 200;
                 rs.Data = _mapper.Map<AdsDto>(ads);
-                var resultWard = await _wardAds.PushToWard(_mapper.Map<AdsDto>(ads));
+                AdsWardDto adsWard = _mapper.Map<AdsWardDto>(ads);
+                var resultWard = await _wardAds.PushToWard(adsWard);
                 if (resultWard.IsError)
                 {
                     rs.Status = resultWard.Status;

@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using UserMap.Persistent;
 
@@ -10,9 +11,10 @@ using UserMap.Persistent;
 namespace UserMap.Persistent.Migrations
 {
     [DbContext(typeof(UserMapContext))]
-    partial class UserMapContextModelSnapshot : ModelSnapshot
+    [Migration("20231228154511_add-feedback-Reportwarm")]
+    partial class addfeedbackReportwarm
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -76,8 +78,9 @@ namespace UserMap.Persistent.Migrations
                     b.Property<float>("Height")
                         .HasColumnType("float");
 
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("tinyint(1)");
+                    b.Property<string>("IsActive")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("tinyint(1)");

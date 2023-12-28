@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace UserMap.Application.Dtos.Ads
 {
-    public class CreateAdsDto
+    public class AdsWardDto
     {
+        public int AdsID { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public string Comment { get; set; }

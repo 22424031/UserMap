@@ -23,6 +23,7 @@ namespace Sakila.Application.Profiles
                     des.UrlImages = JsonConvert.DeserializeObject<List<string>>(src.UrlImagesJson);
                 }
             });
+            CreateMap<Ads, AdsWardDto>().ReverseMap();
             CreateMap<CreateAdsDto, Ads>().ForMember(x => x.UrlImages, opt => opt.MapFrom(y => y.UrlImages)).AfterMap((src, des) =>
             {
                 if(src.UrlImages is not null && src.UrlImages.Count > 0)
