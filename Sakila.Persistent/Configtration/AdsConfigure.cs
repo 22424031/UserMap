@@ -18,6 +18,7 @@ namespace UserMap.Persistent.Configtration
             builder.Property(x => x.Comment).HasColumnType("nvarchar(300)").HasMaxLength(300);
             builder.Property(x => x.PhoneNumber).HasColumnType("varchar(20)").HasMaxLength(20);
             builder.Property(x => x.UrlImagesJson).HasColumnType("Json");
+            builder.Property(x => x.Feedback).HasMaxLength(300);
             builder.Ignore(x => x.UrlImages);
         }
     }

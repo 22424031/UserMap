@@ -53,6 +53,11 @@ namespace UserMap.API.Controllers
 
             return result;
         }
+        /// <summary>
+        /// Get By ReportWarmID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         public async Task<ActionResult<BaseResponse<ReportWarmDto>>> GetByIdAsync(int id)
         {
