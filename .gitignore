@@ -22,10 +22,15 @@ project.json.old
 [Rr]eleases/
 x64/
 x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]/64
 build/
 bld/
 [Bb]in/
 [Oo]bj/
+[L1]og/
+[L2]ogs/
 
 # Visual Studio 2015 cache/options directory
 .vs/
@@ -44,6 +49,7 @@ TestResult.xml
 [Dd]ebugPS/
 [Rr]eleasePS/
 dlldata.c
+**/bin/Debug/net6.0
 
 # DNX
 project.lock.json
@@ -230,6 +236,7 @@ FakesAssemblies/
 **/*.DesktopClient/ModelManifest.xml
 **/*.Server/GeneratedArtifacts
 **/*.Server/ModelManifest.xml
+
 _Pvt_Extensions
 
 # Paket dependency manager
