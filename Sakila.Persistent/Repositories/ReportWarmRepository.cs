@@ -1,4 +1,5 @@
-﻿using UserMap.Application.Contracts.ReportWarm;
+﻿using Microsoft.EntityFrameworkCore;
+using UserMap.Application.Contracts.ReportWarm;
 using UserMap.Domain;
 using UserMap.Persistent;
 
@@ -11,6 +12,11 @@ namespace Sakila.Persistent.Repositories
         public ReportWarmRepository(UserMapContext dbContext) : base(dbContext)
         {
             _context = dbContext;
+        }
+        public async Task< ReportWarm> GetByID(int id)
+        {
+            var reportWarm = await _context.ReportWarm.FirstOrDefaultAsync(x => x.ReportWarmID == id);
+            return reportWarm;
         }
         public async Task SaveAsync()
         {

@@ -44,13 +44,24 @@ namespace UserMap.API.Controllers
         public async Task<ActionResult<BaseResponse<ReportWarmDto>>> AddAsync([FromBody] CreateReportWarmDto createReportWarm)
         {
             var result = await _mediator.Send(new AddReportWarmRequest { CreateReportWarmDto = createReportWarm });
-
             return result;
         }
         [HttpGet()]
         public async Task<ActionResult<BaseResponse<List<ReportWarmDto>>>> GetListAsync()
         {
             var result = await _mediator.Send(new GetListReportWarmRequest ());
+
+            return result;
+        }
+        /// <summary>
+        /// Get By ReportWarmID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet("{id}")]
+        public async Task<ActionResult<BaseResponse<ReportWarmDto>>> GetByIdAsync(int id)
+        {
+            var result = await _mediator.Send(new GetReportWarmByIdRequest { id = id});
 
             return result;
         }

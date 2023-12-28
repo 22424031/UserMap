@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UserMap.Application.Contracts.Ads;
+using UserMap.Application.Dtos.SubWard;
 using UserMap.Domain;
 
 namespace UserMap.Persistent.Repositories
@@ -21,6 +22,10 @@ namespace UserMap.Persistent.Repositories
         public async Task SaveChange()
         {
             await _dbcontext.SaveChangeAsync("system");
+        }
+        public async Task<Ads> GetAdsById(int id)
+        {
+            return await _dbcontext.Ads.FirstOrDefaultAsync(x => x.AdsID == id);
         }
     }
 }
