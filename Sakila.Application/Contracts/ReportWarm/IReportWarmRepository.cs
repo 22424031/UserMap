@@ -11,5 +11,6 @@ namespace UserMap.Application.Contracts.ReportWarm
     public interface IReportWarmRepository : IGenericRepository<Domain.ReportWarm>
     {
         Task SaveAsync();
+        Task<Domain.ReportWarm> GetByID(int id);
     }
 }
