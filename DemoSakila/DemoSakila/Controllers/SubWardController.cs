@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Sakila.Application.Dtos.Common;
 using UserMap.Application.Dtos.SubWard;
 using UserMap.Application.Feature.Ads.Requests;
+using UserMap.Application.Feature.ReportWarms.Requests;
 
 namespace UserMap.API.Controllers
 {
@@ -22,6 +23,13 @@ namespace UserMap.API.Controllers
         {
             var data = await _mediator.Send(new UpdateAdsStatusRequest { StatusFeedbackDto = feedbackDto});
             return data;
+        }
+        [HttpPost("StatusReportWarmFeedback")]
+        public async Task<ActionResult<BaseResponse<bool>>> StatusReportWarmFeedback(StatusFeedbackDto feedbackDto)
+        {
+            var data = await _mediator.Send(new UpdateReportWarmStatusRequest { StatusFeedback = feedbackDto });
+            return data;
+       
         }
     }
 }

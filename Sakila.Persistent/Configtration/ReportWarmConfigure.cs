@@ -22,6 +22,8 @@ namespace UserMap.Persistent.Configtration
             builder.Property(x => x.FullName).IsRequired().HasColumnType("varchar(20)").HasMaxLength(20);
             builder.Property(x => x.PhoneNumber).IsRequired().HasColumnType("varchar(15)").HasMaxLength(15);
             builder.Property(x => x.UrlStringJson).HasColumnType("Json").IsRequired();
+            builder.Property(x => x.Status).IsRequired();
+            builder.Property(x => x.Feedback).HasMaxLength(300);
         }
     }
 }

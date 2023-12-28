@@ -8,7 +8,7 @@ namespace UserMap.Application.Dtos.SubWard
 {
     public class StatusFeedbackDto
     {
-        public int AdsId { get; set; }
+        public int Id { get; set; }
         public string Comment { get; set; }
         public string Status { get; set; }
         public string FeedbackBy { get; set; } = "Admin";

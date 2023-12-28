@@ -10,6 +10,6 @@ namespace UserMap.Application.Contracts.Ward
 {
     public interface IWardAds
     {
-        Task<BaseResponse<bool>> PushToWard(AdsDto dto);
+        Task<BaseResponse<bool>> PushToWard(AdsWardDto dto);
     }
 }

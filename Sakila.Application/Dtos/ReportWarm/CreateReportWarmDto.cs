@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UserMap.Application.Constants;
 
 namespace UserMap.Application.Dtos.ReportWarm
 {
@@ -15,6 +16,8 @@ namespace UserMap.Application.Dtos.ReportWarm
         public string Comment { get; set; }
         public List<string> UrlString { get; set; }
         public int AdsID { get; set; }
-        public string Status { get; set; }
+        public string Status { get; set; } = StatusFeedbackConst.Moi;
+
+        public bool IsActive { get; set; } = true;
     }
 }
