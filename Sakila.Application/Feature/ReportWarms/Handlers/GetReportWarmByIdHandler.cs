@@ -25,6 +25,13 @@ namespace UserMap.Application.Feature.ReportWarms.Handlers
         public async Task<BaseResponse<ReportWarmDto>> Handle(GetReportWarmByIdRequest request, CancellationToken cancellationToken)
         {
             BaseResponse<ReportWarmDto> rs = new();
+            if(request.id <=0)
+            {
+                rs.IsError = true;
+                rs.ErrorMessage = "id phải lớn hơn 0";
+                rs.Status = 400;
+                return rs;
+            }
             var data = await _reportWarmRepository.GetByID(request.id);
             rs.Data = _mapper.Map<ReportWarmDto>(data);
             return rs;

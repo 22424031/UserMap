@@ -30,7 +30,7 @@ namespace UserMap.Application.Feature.Ads.Handlers
             try
             {
               
-              Domain.Ads ads = await _adsRepository.Add(_mapper.Map<Domain.Ads>(request.Ads));
+                Domain.Ads ads = await _adsRepository.Add(_mapper.Map<Domain.Ads>(request.Ads));
                 ads.IsActive = false;
                 await _adsRepository.SaveChange();
                 rs.Status = 200;
