@@ -5,6 +5,7 @@ using Sakila.Persistent;
 using System;
 using UserMap.Persistent;
 using WardService;
+using JwtAuthenticationManager;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +19,7 @@ builder.Services.ConfigWardService(builder.Configuration);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddConnections();
+builder.Services.AddCustomJwtAuthentication();
 builder.Services.AddCors(op => op.AddPolicy(name: "angularApp", policy =>
 {
     policy.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader().AllowAnyOrigin();
@@ -41,7 +43,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
 app.UseCors("angularApp");
 app.MapControllers();

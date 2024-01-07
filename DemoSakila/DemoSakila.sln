@@ -15,7 +15,9 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{EF66198F-8B79-4BEF-8A19-AB752EE65694}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WardService", "..\WardService\WardService.csproj", "{92A8C4F8-5A50-4686-83D7-BC2BB43BAE77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WardService", "..\WardService\WardService.csproj", "{92A8C4F8-5A50-4686-83D7-BC2BB43BAE77}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JwtAuthenticationManager", "..\..\JwtAuthenticationManager\JwtAuthenticationManager.csproj", "{645EFE94-419C-4CCC-A107-91D251C61409}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{92A8C4F8-5A50-4686-83D7-BC2BB43BAE77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92A8C4F8-5A50-4686-83D7-BC2BB43BAE77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92A8C4F8-5A50-4686-83D7-BC2BB43BAE77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{645EFE94-419C-4CCC-A107-91D251C61409}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{645EFE94-419C-4CCC-A107-91D251C61409}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{645EFE94-419C-4CCC-A107-91D251C61409}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{645EFE94-419C-4CCC-A107-91D251C61409}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
